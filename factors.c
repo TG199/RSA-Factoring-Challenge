@@ -10,36 +10,19 @@ bool is_even(int n)
 
 void factorize(int n)
 {
-	int i, j;
+	int i;
 
 
-	/*for (i = 2; i <= n / 2; i++)
+	for (i = 2; i <= n / 2; i++)
 	{
 		if (is_even(i) && is_even(n))
 			continue;
 
 		if (n % i == 0)
 		{
-			j = n / 2;
-			printf("%d=%d*%d\n", n, j, n);
+			printf("%d=%d*%d\n", n, i, n / i);
+			return;
 		}
-	}*/
-
-	i = 1;
-	j = 1;
-
-	if  ( n % 2 == 0)
-	{
-		j = n / 2;
-
-		printf("%d=%d*2\n", n, j);
-		j++;
-	}
-	else if (n % 3 == 0)
-	{
-		j = n / 3;
-		printf("%d=%d*3\n", n, j);
-		j++;
 	}
 
 }		
