@@ -21,7 +21,8 @@ void factorize(int n)
 		if (n % i == 0)
 		{
 			j = n / i;
-			printf("%d=%d*%d\n", n, i, j);
+			printf("%d=%d*%d\n", n, j, i);
+			return;
 		}
 	}
 
